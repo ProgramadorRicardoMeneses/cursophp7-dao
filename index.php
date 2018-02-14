@@ -17,8 +17,8 @@ require_once("config.php");
 //echo json_encode($lista);
 
 //Carrega uma lista em função do where
-$search = Usuario::search("s");
-echo json_encode($search);
+//$search = Usuario::search("s");
+//echo json_encode($search);
 
 // Carrega o resultado de um where com usuario e senha
 //$usuario = new Usuario();
@@ -26,5 +26,15 @@ echo json_encode($search);
 //echo $usuario;
 
 
+//Insere um usuário
+//$aluno = new Usuario("aluno1", "321");
+//$aluno->insert();
+//echo $aluno;
+
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->update("professor", "12345678");
+
+echo $usuario;
 
 ?>
