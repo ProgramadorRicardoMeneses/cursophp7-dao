@@ -17,14 +17,13 @@ require_once("config.php");
 //echo json_encode($lista);
 
 //Carrega uma lista em função do where
-//$search = Usuario::search("s");
-//echo json_encode($search);
+$search = Usuario::search("s");
+echo json_encode($search);
 
 // Carrega o resultado de um where com usuario e senha
-$usuario = new Usuario();
-$usuario->login("root", "123456");
-
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->login("root", "123456");
+//echo $usuario;
 
 
 
